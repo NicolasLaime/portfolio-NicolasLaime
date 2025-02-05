@@ -91,7 +91,7 @@ export const PROYECTOS = [
     imagen: crudjava,  
     descripcion:
       `Desarrollé una aplicación CRUD (Crear, Leer, Actualizar, Eliminar) para la gestión de empleados, utilizando Java Spring Boot en el backend y React con Bootstrap en el frontend. El backend está construido con Spring Boot, donde implementé una API RESTful para manejar las operaciones CRUD, conectada a una base de datos MySQL. En el frontend, utilicé React para la interfaz de usuario y Bootstrap para un diseño responsivo y moderno. Este proyecto me permitió consolidar mis conocimientos en desarrollo Full Stack, integrando tecnologías tanto del lado del servidor como del cliente.`,
-    Tecnologias: ["Java", "Spring Boot", "React", "Bootstrap", "MySQL", "REST API"],
+    Tecnologias: ["Java", "Spring Boot", "react", "Bootstrap", "MySQL", "REST API"],
     url: "https://crud-empleados-livid.vercel.app/",  
   }
 ];
