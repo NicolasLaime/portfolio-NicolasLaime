@@ -66,7 +66,7 @@ const Contacto = () => {
         </motion.p>
         <a className="border-b">{contacto.email}</a>
 
-        <form onSubmit={handleSubmit} className="mt-8">
+        <form onSubmit={handleSubmit} className="mt-8 w-full lg:max-w-lg mx-auto">
           <input
             type="text"
             name="name"
@@ -93,7 +93,7 @@ const Contacto = () => {
           />
           <button
             type="submit"
-            className="px-4 py-2 bg-blue-500 text-white rounded"
+            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-400 transition-all"
           >
             Enviar mensaje
           </button>

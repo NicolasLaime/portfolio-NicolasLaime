@@ -9,7 +9,7 @@ export const HEROCONTENIDO = `Hola! Soy Nicolás, un desarrollador Full Stack ap
 
 export const SOBREMI = `Soy una persona proactiva y con ganas de aprender, con habilidades para el trabajo en equipo y la comunicación. Me adapto fácilmente a nuevos desafíos y disfruto encontrar soluciones creativas a los problemas. Me motiva el aprendizaje continuo y crecer profesionalmente.`;
 
-export const EXPERIENCIAS = [
+export const ESTUDIOS = [
   {
     año: "2022 - 2023",
     rol: "Desarrollo web Full stack ",
