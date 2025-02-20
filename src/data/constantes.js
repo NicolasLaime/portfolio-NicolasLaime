@@ -3,6 +3,7 @@ import spotifixfondo from "../assets/proyectos/spotifix-fondo.JPG"
 import fondogastos from "../assets/proyectos/fondo-gastos.JPG"
 import chatfondo from "../assets/proyectos/chat-fondo.JPG"
 import crudjava from "../assets/proyectos/crud-java.JPG"
+import ecomerce from "../assets/proyectos/ecommerce-mern.JPG"
 
 
 export const HEROCONTENIDO = `Hola! Soy Nicolás, un desarrollador Full Stack apasionado por la tecnología y la programación. Aunque estoy comenzando en el mundo IT, he dedicado los últimos 2 años a aprender y perfeccionar mis habilidades en el desarrollo web, tanto en el front-end como en el back-end`;
@@ -93,7 +94,19 @@ export const PROYECTOS = [
       `Desarrollé una aplicación CRUD (Crear, Leer, Actualizar, Eliminar) para la gestión de empleados, utilizando Java Spring Boot en el backend y React con Bootstrap en el frontend. El backend está construido con Spring Boot, donde implementé una API RESTful para manejar las operaciones CRUD, conectada a una base de datos MySQL. En el frontend, utilicé React para la interfaz de usuario y Bootstrap para un diseño responsivo y moderno. Este proyecto me permitió consolidar mis conocimientos en desarrollo Full Stack, integrando tecnologías tanto del lado del servidor como del cliente.`,
     Tecnologias: ["Java", "Spring Boot", "react", "Bootstrap", "MySQL", "REST API"],
     url: "https://crud-empleados-livid.vercel.app/",  
-  }
+  },
+  {
+    "titulo": "E-commerce MERN - Java Spring Boot Security + React",
+    "imagen": ecomerce,
+    "descripcion":
+      `Desarrollé una aplicación de e-commerce con Java Spring Boot Security en el backend y React en el frontend. Implementé una API RESTful segura con MySQL y Lombok, mientras que en el frontend utilicé Tailwind CSS para un diseño moderno.  
+
+      La plataforma permite autenticación de usuarios, gestión de productos (CRUD) y simulación de compras con LocalStorage. Próximamente, integraré una pasarela de pago para habilitar transacciones seguras.`,
+    "Tecnologias": ["Java", "Spring Boot Security", "React", "Tailwind CSS", "MySQL", "REST API", "Lombok", "LocalStorage"],
+    "url": "https://ecommerce-mern-sigma.vercel.app/"
+}
+
+
 ];
 
 
