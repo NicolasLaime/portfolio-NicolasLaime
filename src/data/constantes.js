@@ -36,21 +36,12 @@ export const ESTUDIOS = [
 
   },
   {
-    año: "2024",
-    rol: "Curso Desarrollo Full Stack",
-    compania: "Santex",
-    descripcion: `Actualmente estoy cursando un programa intensivo de Desarrollo Full Stack en Santex, donde estoy ampliando mis conocimientos en tecnologías modernas. El curso incluye temas avanzados de JavaScript, angular, Node.js y arquitecturas de software escalables. Estoy aprendiendo a manejar sistemas complejos, integrar servicios de terceros y aplicar mejores prácticas en el desarrollo de aplicaciones web.`,
-    Tecnologias: ["JavaScript", "angular.js", "Node.js", "Microservicios"],
-
-  },
-  {
-    año: "2024",
-    rol: "Curso Backend Java",
-    compania: "Nex-Education ORACLE",
-    descripcion: `Estoy cursando un programa especializado en Backend Java con Nex-Education y Oracle, donde estoy adquiriendo una comprensión profunda de Java y su ecosistema. El curso abarca desde los conceptos básicos de Java hasta la implementación de aplicaciones empresariales utilizando Spring Framework, Hibernate, y bases de datos SQL. Además, estoy aprendiendo sobre la integración de APIs RESTful y la gestión de servidores para aplicaciones de alto rendimiento.`,
-    Tecnologias: ["Java", "Spring Framework", "Hibernate", "SQL", "REST APIs"],
-
-  },
+    "año": "2024",
+    "rol": "Curso Backend Java",
+    "compania": "Nex-Education ORACLE",
+    "descripcion": "Completé un programa especializado en Backend Java con Nex-Education y Oracle, adquiriendo una comprensión profunda de Java y su ecosistema. El curso abarcó desde los fundamentos del lenguaje hasta la implementación de aplicaciones empresariales con Spring Framework, Hibernate y bases de datos SQL. Además, desarrollé habilidades en la integración de APIs RESTful y la gestión de servidores para aplicaciones de alto rendimiento.",
+    "Tecnologias": ["Java", "Spring Framework", "Hibernate", "SQL", "REST APIs"]
+}
  
 ];
 

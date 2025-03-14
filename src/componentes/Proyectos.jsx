@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { PROYECTOS } from '../data/constantes'
 import { motion } from 'framer-motion'
 
@@ -61,7 +61,7 @@ const Proyectos = () => {
                 <p className='mb-4 text-neutral-400'>{proyecto.descripcion}</p>
                 {/* Evitar error: si `Tecnologias` no existe, usar array vacío */}
                 {(proyecto.Tecnologias || []).map((tech, i) => (
-                  <span key={i} className='mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-400'>
+                  <span key={i} className='mr-3 rounded bg-neutral-900  px-3 py-1  text-sm font-medium text-purple-400'>
                     {tech}
                   </span>
                 ))}
