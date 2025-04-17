@@ -2,15 +2,13 @@ import { useState } from 'react'
 import { PROYECTOS } from '../data/constantes'
 import { motion } from 'framer-motion'
 
-const CATEGORIAS = ['React', 'Java']
+const CATEGORIAS = ['Fullstack', 'Frontend']  // Eliminamos 'Backend' de las categorías
 
 const Proyectos = () => {
-  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('React')
+  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('Fullstack')
 
-  // Filtrar proyectos asegurando que `proyecto.Tecnologias` es un array antes de llamar `includes`
-  const proyectosFiltrados = PROYECTOS.filter(proyecto =>
-    Array.isArray(proyecto.Tecnologias) && proyecto.Tecnologias.includes(categoriaSeleccionada)
-  )
+  // Filtrar proyectos por la categoría seleccionada
+  const proyectosFiltrados = PROYECTOS.filter(proyecto => proyecto.categoria === categoriaSeleccionada)
 
   return (
     <div className='border-b border-neutral-900'>

@@ -4,11 +4,12 @@ import fondogastos from "../assets/proyectos/fondo-gastos.JPG"
 import chatfondo from "../assets/proyectos/chat-fondo.JPG"
 import crudjava from "../assets/proyectos/crud-java.JPG"
 import ecomerce from "../assets/proyectos/ecommerce-mern.JPG"
+import tareas from "../assets/proyectos/tareas.JPG"
 
+export const HEROCONTENIDO = `¡Hola! Soy Nicolás, un desarrollador Full Stack apasionado por la tecnología y la programación.
+En los últimos 2 años, he perfeccionado mis habilidades en el desarrollo web, tanto en front-end como back-end. Me especializo en crear aplicaciones dinámicas con código eficiente y de alta calidad. Actualmente, busco mi primer empleo en IT para aplicar mis conocimientos, seguir aprendiendo y contribuir a proyectos innovadores. ¡Estoy listo para aportar y enfrentar nuevos desafíos!`;
 
-export const HEROCONTENIDO = `Hola! Soy Nicolás, un desarrollador Full Stack apasionado por la tecnología y la programación. Aunque estoy comenzando en el mundo IT, he dedicado los últimos 2 años a aprender y perfeccionar mis habilidades en el desarrollo web, tanto en el front-end como en el back-end`;
-
-export const SOBREMI = `Soy una persona proactiva y con ganas de aprender, con habilidades para el trabajo en equipo y la comunicación. Me adapto fácilmente a nuevos desafíos y disfruto encontrar soluciones creativas a los problemas. Me motiva el aprendizaje continuo y crecer profesionalmente.`;
+export const SOBREMI = `Soy una persona proactiva, con una gran pasión por aprender y enfrentar nuevos desafíos. Me considero un buen miembro de equipo, con habilidades para comunicarme de manera efectiva y trabajar de forma colaborativa. Disfruto encontrar soluciones creativas a problemas complejos y me motiva el aprendizaje constante para seguir creciendo tanto personal como profesionalmente.`;
 
 export const ESTUDIOS = [
   {
@@ -52,6 +53,7 @@ export const PROYECTOS = [
     descripcion:
       `Desarrollé un portafolio web para un cliente artista plástica, destacando su obra y trayectoria profesional. El sitio web incluía una galería de arte interactiva con transiciones suaves utilizando Framer Motion, secciones de biografía y contacto con formularios funcionales implementados con EmailJS, además de notificaciones emergentes gestionadas con React Toastify para una experiencia de usuario mejorada.`,
     Tecnologias: ["React", "Tailwdind", "Emailjs", "framer motion"],
+    categoria: "Frontend",  // Categoría añadida
     url: "https://portfolio-yesica-contreras.vercel.app/",
   },
   {
@@ -60,6 +62,7 @@ export const PROYECTOS = [
     descripcion:
       `Desarrollé Spotifix, un clon básico de Spotify, utilizando React y Vite. La aplicación permite reproducir música, navegar entre una lista de canciones y controlar la reproducción mediante un reproductor sencillo gestionado con **Context API**. Además, implementé un diseño responsivo con **TailwindCSS** para una mejor experiencia de usuario. En el futuro, planeo expandirlo a un proyecto **Full Stack** con funcionalidades de backend.`,
     Tecnologias: ["React", "Vite", "TailwindCSS", "Context API", "React Router"],
+    categoria: "Frontend",  // Categoría añadida
     url: "https://spotifix-nicolas-laimes-projects.vercel.app/",
   },
   {
@@ -68,6 +71,7 @@ export const PROYECTOS = [
     descripcion:
       `Desarrollé una aplicación de gestión de gastos utilizando el stack MERN (MongoDB, Express, React, Node.js). El backend está implementado con Node.js y Express, mientras que el frontend está construido con React y TailwindCSS para lograr una interfaz limpia y responsiva. Además, utilicé Chart.js para mostrar gráficos interactivos de los gastos mensuales y categorías, lo que permite a los usuarios visualizar sus finanzas de forma sencilla. En el futuro, planeo agregar autenticación de usuarios y mejorar la gestión de presupuestos. (Base de datos-inactiva)`,
     Tecnologias: ["React", "Node.js", "Express", "MongoDB", "TailwindCSS", "Chart.js"],
+    categoria: "Fullstack",  // Categoría añadida
     url: "https://app-gastos-mern.vercel.app/",  
   },
   {
@@ -76,6 +80,7 @@ export const PROYECTOS = [
     descripcion:
       `Desarrollé una aplicación de chat en tiempo real utilizando el stack MERN (MongoDB, Express, React, Node.js). El backend está implementado con Node.js y Express, gestionando las conexiones de WebSocket para la comunicación en tiempo real, mientras que el frontend está construido con React y Socket.IO para la interacción instantánea entre los usuarios. La aplicación permite crear salas de chat, enviar mensajes y ver notificaciones en tiempo real. En el futuro, planeo agregar autenticación de usuarios y funciones de almacenamiento de mensajes. (Base de datos-inactiva)`,
     Tecnologias: ["React", "Node.js", "Express", "MongoDB", "Socket.IO", "TailwindCSS"],
+    categoria: "Fullstack",  // Categoría añadida
     url: "https://chat-mern-nicolas-laimes-projects.vercel.app/", 
   },
   {
@@ -84,21 +89,30 @@ export const PROYECTOS = [
     descripcion:
       `Desarrollé una aplicación CRUD (Crear, Leer, Actualizar, Eliminar) para la gestión de empleados, utilizando Java Spring Boot en el backend y React con Bootstrap en el frontend. El backend está construido con Spring Boot, donde implementé una API RESTful para manejar las operaciones CRUD, conectada a una base de datos MySQL. En el frontend, utilicé React para la interfaz de usuario y Bootstrap para un diseño responsivo y moderno. Este proyecto me permitió consolidar mis conocimientos en desarrollo Full Stack, integrando tecnologías tanto del lado del servidor como del cliente.`,
     Tecnologias: ["Java", "Spring Boot", "react", "Bootstrap", "MySQL", "REST API"],
+    categoria: "Fullstack",  // Categoría añadida
     url: "https://crud-empleados-livid.vercel.app/",  
   },
   {
-    "titulo": "E-commerce MERN - Java Spring Boot Security + React",
-    "imagen": ecomerce,
-    "descripcion":
-      `Desarrollé una aplicación de e-commerce con Java Spring Boot Security en el backend y React en el frontend. Implementé una API RESTful segura con MySQL y Lombok, mientras que en el frontend utilicé Tailwind CSS para un diseño moderno.  
-
-      La plataforma permite autenticación de usuarios, gestión de productos (CRUD) y simulación de compras con LocalStorage. Próximamente, integraré una pasarela de pago para habilitar transacciones seguras.`,
-    "Tecnologias": ["Java", "Spring Boot Security", "React", "Tailwind CSS", "MySQL", "REST API", "Lombok", "LocalStorage"],
-    "url": "https://ecommerce-mern-sigma.vercel.app/"
-}
-
-
+    titulo: "E-commerce MERN - Java Spring Boot Security + React",
+    imagen: ecomerce,
+    descripcion:
+      `Desarrollé una aplicación de e-commerce con Java Spring Boot Security en el backend y React en el frontend. Implementé una API RESTful segura con MySQL y Lombok, mientras que en el frontend utilicé Tailwind CSS para un diseño moderno. La plataforma permite autenticación de usuarios, gestión de productos (CRUD) y simulación de compras con LocalStorage. Próximamente, integraré una pasarela de pago para habilitar transacciones seguras.`,
+    Tecnologias: ["Java", "Spring Boot Security", "react", "Tailwind CSS", "MySQL", "REST API", "Lombok", "LocalStorage"],
+    categoria: "Fullstack",  // Categoría añadida
+    url: "https://ecommerce-mern-sigma.vercel.app/"
+  },
+  {
+    titulo: "App de Tareas Full Stack",
+    imagen: tareas,
+    descripcion:
+      `Desarrollé una aplicación de gestión de tareas full stack que permite crear, listar y filtrar tareas según su estado. En el frontend utilicé React con Tailwind CSS para un diseño limpio y responsive, Framer Motion para animaciones suaves, y React Toastify para notificaciones elegantes. En el backend implementé una API REST con Java Spring Boot, estructurada con capas de Controller, Service y Repository, validaciones con Bean Validation y persistencia con JPA. Desplegada en Railway (backend) y Vercel (frontend).`,
+    Tecnologias: ["react", "Tailwind", "Framer Motion", "Toastify", "ava", "Spring Boot", "JPA", "Railway", "Vercel"],
+    categoria: "Fullstack",  // Categoría añadida
+    url: "https://tareas-app-nu.vercel.app/"
+  }
 ];
+
+
 
 
 
