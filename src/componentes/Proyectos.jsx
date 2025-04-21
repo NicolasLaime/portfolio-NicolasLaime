@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { PROYECTOS } from '../data/constantes'
 import { motion } from 'framer-motion'
 
-const CATEGORIAS = ['Fullstack', 'Frontend']  // Eliminamos 'Backend' de las categorías
+const CATEGORIAS = ['Fullstack', 'Frontend']  
 
 const Proyectos = () => {
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('Fullstack')
@@ -36,6 +36,12 @@ const Proyectos = () => {
         ))}
       </div>
 
+      {/* Aviso de backends pausados */}
+      <p className='text-center text-yellow-400 italic mb-6 px-4'>
+        ⚠️ Todos los backends están pausados temporalmente para optimizar recursos.
+        Si querés ver alguno funcionando, avisame y lo activo en minutos
+      </p>
+
       {/* Lista de proyectos */}
       <div>
         {proyectosFiltrados.length > 0 ? (
@@ -57,9 +63,8 @@ const Proyectos = () => {
               >
                 <h6 className='mb-2 font-semibold'>{proyecto.titulo}</h6>
                 <p className='mb-4 text-neutral-400'>{proyecto.descripcion}</p>
-                {/* Evitar error: si `Tecnologias` no existe, usar array vacío */}
                 {(proyecto.Tecnologias || []).map((tech, i) => (
-                  <span key={i} className='mr-3 rounded bg-neutral-900  px-3 py-1  text-sm font-medium text-purple-400'>
+                  <span key={i} className='mr-3 rounded bg-neutral-900 px-3 py-1 text-sm font-medium text-purple-400'>
                     {tech}
                   </span>
                 ))}
