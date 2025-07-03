@@ -5,6 +5,7 @@ import chatfondo from "../assets/proyectos/chat-fondo.JPG"
 import crudjava from "../assets/proyectos/crud-java.JPG"
 import ecomerce from "../assets/proyectos/ecommerce-mern.JPG"
 import tareas from "../assets/proyectos/tareas.JPG"
+import foro from "../assets/proyectos/foro-principal.JPG"
 
 export const HEROCONTENIDO = `¡Hola! Soy Nicolás, un desarrollador Full Stack apasionado por la tecnología y la programación.
 En los últimos 2 años, he perfeccionado mis habilidades en el desarrollo web, tanto en front-end como back-end. Me especializo en crear aplicaciones dinámicas con código eficiente y de alta calidad. Actualmente, busco mi primer empleo en IT para aplicar mis conocimientos, seguir aprendiendo y contribuir a proyectos innovadores. ¡Estoy listo para aportar y enfrentar nuevos desafíos!`;
@@ -109,7 +110,32 @@ export const PROYECTOS = [
     Tecnologias: ["react", "Tailwind", "Framer Motion", "Toastify", "ava", "Spring Boot", "JPA", "Railway", "Vercel"],
     categoria: "Fullstack",  // Categoría añadida
     url: "https://tareas-app-nu.vercel.app/"
-  }
+  },
+  {
+  titulo: "Foro Patagonia - App Full Stack",
+  imagen: foro, 
+  descripcion:
+    `Desarrollé una aplicación full stack tipo foro donde los usuarios pueden registrarse, iniciar sesión y participar creando y comentando publicaciones dentro de distintas categorías. El frontend fue construido con React y TypeScript, utilizando Tailwind CSS para un diseño limpio y responsive, y Zustand para el manejo de estados. Se implementaron formularios robustos con React Hook Form, notificaciones visuales con React Toastify y comunicación HTTP vía Axios. En el backend utilicé Java con Spring Boot, aplicando una arquitectura en capas, autenticación segura con JWT y control de acceso con Spring Security. La base de datos MySQL es gestionada con JPA e Hibernate. Actualmente, el proyecto se encuentra en proceso de despliegue`,
+  Tecnologias: [
+    "React",
+    "TypeScript",
+    "Tailwind",
+    "Zustand",
+    "React Hook Form",
+    "Toastify",
+    "Axios",
+    "Java",
+    "Spring Boot",
+    "Spring Security",
+    "JWT",
+    "JPA",
+    "Hibernate",
+    "MySQL",
+    "Railway",
+    "Vercel"
+  ],
+  categoria: "Fullstack", 
+}
 ];
 
 
