@@ -42,7 +42,7 @@ const Hero = () => {
               {HEROCONTENIDO}
             </motion.p>
             <motion.a
-              href="cv-programador-nl.pdf" // Ruta del archivo PDF en tu carpeta public
+              href="cv-programador-nl-2025.pdf" 
               download
               className="mt-4 mb-8 lg:mb-0 inline-block px-6 py-2 bg-blue-500 text-white rounded-lg text-lg hover:bg-blue-300 transition-all"
             >
