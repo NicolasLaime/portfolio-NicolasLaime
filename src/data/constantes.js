@@ -6,6 +6,7 @@ import crudjava from "../assets/proyectos/crud-java.JPG"
 import ecomerce from "../assets/proyectos/ecommerce-mern.JPG"
 import tareas from "../assets/proyectos/tareas.JPG"
 import foro from "../assets/proyectos/foro-principal.JPG"
+import homekutral from "../assets/proyectos/home-kutral.JPG"
 
 export const HEROCONTENIDO = `¡Hola! Soy Nicolás, un desarrollador Full Stack apasionado por la tecnología y la programación.
 En los últimos 2 años, he perfeccionado mis habilidades en el desarrollo web, tanto en front-end como back-end. Me especializo en crear aplicaciones dinámicas con código eficiente y de alta calidad. Actualmente, busco mi primer empleo en IT para aplicar mis conocimientos, seguir aprendiendo y contribuir a proyectos innovadores. ¡Estoy listo para aportar y enfrentar nuevos desafíos!`;
@@ -135,7 +136,35 @@ export const PROYECTOS = [
     "Vercel"
   ],
   categoria: "Fullstack", 
+},
+{
+  titulo: "Kutral E-commerce - Full Stack",
+  imagen: homekutral,
+  descripcion:
+    `Desarrollé Kutral E-commerce, una plataforma full stack construida con Spring Boot en el backend y React en el frontend. 
+    El backend implementa una API RESTful segura con Spring Security, JWT y MySQL, gestionando usuarios, productos y órdenes. 
+    En el frontend utilicé React con Tailwind CSS para un diseño moderno y responsive, integrando React Query para el manejo eficiente del estado remoto. 
+    Además, la aplicación incluye autenticación de usuarios, carrito de compras y pasarela de pagos mediante **Mercado Pago (Sandbox)**. 
+    El proyecto está estructurado con buenas prácticas de arquitectura, facilitando su escalabilidad y mantenimiento.`,
+  Tecnologias: [
+    "Java",
+    "Spring Boot",
+    "Spring Security",
+    "JWT",
+    "MySQL",
+    "React",
+    "TypeScript",
+    "TailwindCSS",
+    "React Query",
+    "REST API",
+    "Mercado Pago"
+  ],
+  categoria: "Fullstack",
+  url: "https://github.com/NicolasLaime/kutral-ecommerce"
 }
+
+
+
 ];
 
 
