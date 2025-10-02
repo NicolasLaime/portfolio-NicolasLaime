@@ -8,10 +8,13 @@ import tareas from "../assets/proyectos/tareas.JPG"
 import foro from "../assets/proyectos/foro-principal.JPG"
 import homekutral from "../assets/proyectos/home-kutral.JPG"
 
-export const HEROCONTENIDO = `¡Hola! Soy Nicolás, un desarrollador Full Stack apasionado por la tecnología y la programación.
-En los últimos 2 años, he perfeccionado mis habilidades en el desarrollo web, tanto en front-end como back-end. Me especializo en crear aplicaciones dinámicas con código eficiente y de alta calidad. Actualmente, busco mi primer empleo en IT para aplicar mis conocimientos, seguir aprendiendo y contribuir a proyectos innovadores. ¡Estoy listo para aportar y enfrentar nuevos desafíos!`;
+export const HEROCONTENIDO = `¡Hola! Soy Nicolás, desarrollador Full Stack enfocado en crear soluciones digitales eficientes y funcionales. 
+Trabajo tanto en front-end como en back-end, cuidando la calidad del código y la experiencia del usuario. 
+Busco proyectos donde pueda aportar mis habilidades, seguir aprendiendo y aplicar nuevas tecnologías.`;
 
-export const SOBREMI = `Soy una persona proactiva, con una gran pasión por aprender y enfrentar nuevos desafíos. Me considero un buen miembro de equipo, con habilidades para comunicarme de manera efectiva y trabajar de forma colaborativa. Disfruto encontrar soluciones creativas a problemas complejos y me motiva el aprendizaje constante para seguir creciendo tanto personal como profesionalmente.`;
+export const SOBREMI = `Soy una persona curiosa y proactiva, que disfruta aprender y compartir conocimientos. 
+Me siento cómodo trabajando en equipo, aportando ideas y escuchando las de los demás. 
+Me motiva resolver problemas de manera creativa y mantenerme en constante evolución para dar siempre lo mejor de mí en cada proyecto.`;
 
 export const ESTUDIOS = [
   {
@@ -67,77 +70,8 @@ export const PROYECTOS = [
     categoria: "Frontend",  // Categoría añadida
     url: "https://spotifix-nicolas-laimes-projects.vercel.app/",
   },
+  
   {
-    titulo: "App de Gestión de Gastos - MERN Stack",
-    imagen: fondogastos,  
-    descripcion:
-      `Desarrollé una aplicación de gestión de gastos utilizando el stack MERN (MongoDB, Express, React, Node.js). El backend está implementado con Node.js y Express, mientras que el frontend está construido con React y TailwindCSS para lograr una interfaz limpia y responsiva. Además, utilicé Chart.js para mostrar gráficos interactivos de los gastos mensuales y categorías, lo que permite a los usuarios visualizar sus finanzas de forma sencilla. En el futuro, planeo agregar autenticación de usuarios y mejorar la gestión de presupuestos. (Base de datos-inactiva)`,
-    Tecnologias: ["React", "Node.js", "Express", "MongoDB", "TailwindCSS", "Chart.js"],
-    categoria: "Fullstack",  // Categoría añadida
-    url: "https://app-gastos-mern.vercel.app/",  
-  },
-  {
-    titulo: "Chat MERN - Real-Time Messaging",
-    imagen: chatfondo,  
-    descripcion:
-      `Desarrollé una aplicación de chat en tiempo real utilizando el stack MERN (MongoDB, Express, React, Node.js). El backend está implementado con Node.js y Express, gestionando las conexiones de WebSocket para la comunicación en tiempo real, mientras que el frontend está construido con React y Socket.IO para la interacción instantánea entre los usuarios. La aplicación permite crear salas de chat, enviar mensajes y ver notificaciones en tiempo real. En el futuro, planeo agregar autenticación de usuarios y funciones de almacenamiento de mensajes. (Base de datos-inactiva)`,
-    Tecnologias: ["React", "Node.js", "Express", "MongoDB", "Socket.IO", "TailwindCSS"],
-    categoria: "Fullstack",  // Categoría añadida
-    url: "https://chat-mern-nicolas-laimes-projects.vercel.app/", 
-  },
-  {
-    titulo: "CRUD Simple de Empleados - Java Spring Boot + React",
-    imagen: crudjava,  
-    descripcion:
-      `Desarrollé una aplicación CRUD (Crear, Leer, Actualizar, Eliminar) para la gestión de empleados, utilizando Java Spring Boot en el backend y React con Bootstrap en el frontend. El backend está construido con Spring Boot, donde implementé una API RESTful para manejar las operaciones CRUD, conectada a una base de datos MySQL. En el frontend, utilicé React para la interfaz de usuario y Bootstrap para un diseño responsivo y moderno. Este proyecto me permitió consolidar mis conocimientos en desarrollo Full Stack, integrando tecnologías tanto del lado del servidor como del cliente.`,
-    Tecnologias: ["Java", "Spring Boot", "react", "Bootstrap", "MySQL", "REST API"],
-    categoria: "Fullstack",  // Categoría añadida
-    url: "https://crud-empleados-livid.vercel.app/",  
-  },
-  {
-    titulo: "E-commerce MERN - Java Spring Boot Security + React",
-    imagen: ecomerce,
-    descripcion:
-      `Desarrollé una aplicación de e-commerce con Java Spring Boot Security en el backend y React en el frontend. Implementé una API RESTful segura con MySQL y Lombok, mientras que en el frontend utilicé Tailwind CSS para un diseño moderno. La plataforma permite autenticación de usuarios, gestión de productos (CRUD) y simulación de compras con LocalStorage. Próximamente, integraré una pasarela de pago para habilitar transacciones seguras.`,
-    Tecnologias: ["Java", "Spring Boot Security", "react", "Tailwind CSS", "MySQL", "REST API", "Lombok", "LocalStorage"],
-    categoria: "Fullstack",  // Categoría añadida
-    url: "https://ecommerce-mern-sigma.vercel.app/"
-  },
-  {
-    titulo: "App de Tareas Full Stack",
-    imagen: tareas,
-    descripcion:
-      `Desarrollé una aplicación de gestión de tareas full stack que permite crear, listar y filtrar tareas según su estado. En el frontend utilicé React con Tailwind CSS para un diseño limpio y responsive, Framer Motion para animaciones suaves, y React Toastify para notificaciones elegantes. En el backend implementé una API REST con Java Spring Boot, estructurada con capas de Controller, Service y Repository, validaciones con Bean Validation y persistencia con JPA. Desplegada en Railway (backend) y Vercel (frontend).`,
-    Tecnologias: ["react", "Tailwind", "Framer Motion", "Toastify", "ava", "Spring Boot", "JPA", "Railway", "Vercel"],
-    categoria: "Fullstack",  // Categoría añadida
-    url: "https://tareas-app-nu.vercel.app/"
-  },
-  {
-  titulo: "Foro Patagonia - App Full Stack",
-  imagen: foro, 
-  descripcion:
-    `Desarrollé una aplicación full stack tipo foro donde los usuarios pueden registrarse, iniciar sesión y participar creando y comentando publicaciones dentro de distintas categorías. El frontend fue construido con React y TypeScript, utilizando Tailwind CSS para un diseño limpio y responsive, y Zustand para el manejo de estados. Se implementaron formularios robustos con React Hook Form, notificaciones visuales con React Toastify y comunicación HTTP vía Axios. En el backend utilicé Java con Spring Boot, aplicando una arquitectura en capas, autenticación segura con JWT y control de acceso con Spring Security. La base de datos MySQL es gestionada con JPA e Hibernate. Actualmente, el proyecto se encuentra en proceso de despliegue`,
-  Tecnologias: [
-    "React",
-    "TypeScript",
-    "Tailwind",
-    "Zustand",
-    "React Hook Form",
-    "Toastify",
-    "Axios",
-    "Java",
-    "Spring Boot",
-    "Spring Security",
-    "JWT",
-    "JPA",
-    "Hibernate",
-    "MySQL",
-    "Railway",
-    "Vercel"
-  ],
-  categoria: "Fullstack", 
-},
-{
   titulo: "Kutral E-commerce - Full Stack",
   imagen: homekutral,
   descripcion:
@@ -161,7 +95,78 @@ export const PROYECTOS = [
   ],
   categoria: "Fullstack",
   url: "https://github.com/NicolasLaime/kutral-ecommerce"
-}
+  },
+    {
+  titulo: "Foro Patagonia - App Full Stack",
+  imagen: foro, 
+  descripcion:
+    `Desarrollé una aplicación full stack tipo foro donde los usuarios pueden registrarse, iniciar sesión y participar creando y comentando publicaciones dentro de distintas categorías. El frontend fue construido con React y TypeScript, utilizando Tailwind CSS para un diseño limpio y responsive, y Zustand para el manejo de estados. Se implementaron formularios robustos con React Hook Form, notificaciones visuales con React Toastify y comunicación HTTP vía Axios. En el backend utilicé Java con Spring Boot, aplicando una arquitectura en capas, autenticación segura con JWT y control de acceso con Spring Security. La base de datos MySQL es gestionada con JPA e Hibernate. Actualmente, el proyecto se encuentra en proceso de despliegue`,
+  Tecnologias: [
+    "React",
+    "TypeScript",
+    "Tailwind",
+    "Zustand",
+    "React Hook Form",
+    "Toastify",
+    "Axios",
+    "Java",
+    "Spring Boot",
+    "Spring Security",
+    "JWT",
+    "JPA",
+    "Hibernate",
+    "MySQL",
+    "Railway",
+    "Vercel"
+  ],
+  categoria: "Fullstack", 
+  },
+  {
+    titulo: "Chat MERN - Real-Time Messaging",
+    imagen: chatfondo,  
+    descripcion:
+      `Desarrollé una aplicación de chat en tiempo real utilizando el stack MERN (MongoDB, Express, React, Node.js). El backend está implementado con Node.js y Express, gestionando las conexiones de WebSocket para la comunicación en tiempo real, mientras que el frontend está construido con React y Socket.IO para la interacción instantánea entre los usuarios. La aplicación permite crear salas de chat, enviar mensajes y ver notificaciones en tiempo real. En el futuro, planeo agregar autenticación de usuarios y funciones de almacenamiento de mensajes. (Base de datos-inactiva)`,
+    Tecnologias: ["React", "Node.js", "Express", "MongoDB", "Socket.IO", "TailwindCSS"],
+    categoria: "Fullstack",  // Categoría añadida
+    url: "https://chat-mern-nicolas-laimes-projects.vercel.app/", 
+  },
+ 
+  {
+    titulo: "E-commerce MERN - Java Spring Boot Security + React",
+    imagen: ecomerce,
+    descripcion:
+      `Desarrollé una aplicación de e-commerce con Java Spring Boot Security en el backend y React en el frontend. Implementé una API RESTful segura con MySQL y Lombok, mientras que en el frontend utilicé Tailwind CSS para un diseño moderno. La plataforma permite autenticación de usuarios, gestión de productos (CRUD) y simulación de compras con LocalStorage. Próximamente, integraré una pasarela de pago para habilitar transacciones seguras.`,
+    Tecnologias: ["Java", "Spring Boot Security", "react", "Tailwind CSS", "MySQL", "REST API", "Lombok", "LocalStorage"],
+    categoria: "Fullstack",  // Categoría añadida
+    url: "https://ecommerce-mern-sigma.vercel.app/"
+  },
+   {
+    titulo: "CRUD Simple de Empleados - Java Spring Boot + React",
+    imagen: crudjava,  
+    descripcion:
+      `Desarrollé una aplicación CRUD (Crear, Leer, Actualizar, Eliminar) para la gestión de empleados, utilizando Java Spring Boot en el backend y React con Bootstrap en el frontend. El backend está construido con Spring Boot, donde implementé una API RESTful para manejar las operaciones CRUD, conectada a una base de datos MySQL. En el frontend, utilicé React para la interfaz de usuario y Bootstrap para un diseño responsivo y moderno. Este proyecto me permitió consolidar mis conocimientos en desarrollo Full Stack, integrando tecnologías tanto del lado del servidor como del cliente.`,
+    Tecnologias: ["Java", "Spring Boot", "react", "Bootstrap", "MySQL", "REST API"],
+    categoria: "Fullstack",  // Categoría añadida
+    url: "https://crud-empleados-livid.vercel.app/",  
+  },
+  {
+    titulo: "App de Gestión de Gastos - MERN Stack",
+    imagen: fondogastos,  
+    descripcion:
+      `Desarrollé una aplicación de gestión de gastos utilizando el stack MERN (MongoDB, Express, React, Node.js). El backend está implementado con Node.js y Express, mientras que el frontend está construido con React y TailwindCSS para lograr una interfaz limpia y responsiva. Además, utilicé Chart.js para mostrar gráficos interactivos de los gastos mensuales y categorías, lo que permite a los usuarios visualizar sus finanzas de forma sencilla. En el futuro, planeo agregar autenticación de usuarios y mejorar la gestión de presupuestos. (Base de datos-inactiva)`,
+    Tecnologias: ["React", "Node.js", "Express", "MongoDB", "TailwindCSS", "Chart.js"],
+    categoria: "Fullstack",  // Categoría añadida
+    url: "https://app-gastos-mern.vercel.app/",  
+  },
+   {
+    titulo: "App de Tareas Full Stack",
+    imagen: tareas,
+    descripcion:
+      `Desarrollé una aplicación de gestión de tareas full stack que permite crear, listar y filtrar tareas según su estado. En el frontend utilicé React con Tailwind CSS para un diseño limpio y responsive, Framer Motion para animaciones suaves, y React Toastify para notificaciones elegantes. En el backend implementé una API REST con Java Spring Boot, estructurada con capas de Controller, Service y Repository, validaciones con Bean Validation y persistencia con JPA. Desplegada en Railway (backend) y Vercel (frontend).`,
+    Tecnologias: ["react", "Tailwind", "Framer Motion", "Toastify", "ava", "Spring Boot", "JPA", "Railway", "Vercel"],
+    categoria: "Fullstack",  // Categoría añadida
+    url: "https://tareas-app-nu.vercel.app/"
+  },
 
 
 
@@ -173,6 +178,5 @@ export const PROYECTOS = [
 
 export const contacto = {
   address: "Cordoba - Argentina ",
-  phoneNo: "2966-388807",
   email: "nicolaime100@gmail.com",
 };

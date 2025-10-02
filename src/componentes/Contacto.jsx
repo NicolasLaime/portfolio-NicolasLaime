@@ -21,18 +21,22 @@ const Contacto = () => {
 
     emailjs
       .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,   // Usar la variable de entorno en Vite
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,  // Usar la variable de entorno en Vite
-        e.target,                                    // El formulario
-        import.meta.env.VITE_EMAILJS_USER_ID       // Usar la variable de entorno en Vite
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,   
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,  
+        e.target,                                   
+        import.meta.env.VITE_EMAILJS_USER_ID       
       )
       .then(
         (result) => {
+          console.log(result);
           setStatus('Mensaje enviado exitosamente');
-          setFormData({ name: '', email: '', message: '' }); // Limpiar el formulario
+          setFormData({ name: '', email: '', message: '' }); 
+          
         },
         (error) => {
+           console.error(error);
           setStatus('Hubo un error al enviar el mensaje');
+          
         }
       );
   };
@@ -55,14 +59,6 @@ const Contacto = () => {
           className="my-4"
         >
           {contacto.address}
-        </motion.p>
-        <motion.p
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 0.5 }}
-          className="my-4"
-        >
-          {contacto.phoneNo}
         </motion.p>
         <a className="border-b">{contacto.email}</a>
 

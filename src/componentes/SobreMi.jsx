@@ -1,4 +1,3 @@
-import React from 'react'
 import pc from '/pc-programando.jpg'
 import { SOBREMI } from '../data/constantes'
 import { motion } from 'framer-motion'
