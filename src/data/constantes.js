@@ -7,6 +7,7 @@ import ecomerce from "../assets/proyectos/ecommerce-mern.JPG"
 import tareas from "../assets/proyectos/tareas.JPG"
 import foro from "../assets/proyectos/foro-principal.JPG"
 import homekutral from "../assets/proyectos/home-kutral.JPG"
+import inmobiliaria from "../assets/proyectos/inmobiliaria.JPG"
 
 export const HEROCONTENIDO = `¡Hola! Soy Nicolás, desarrollador Full Stack enfocado en crear soluciones digitales eficientes y funcionales. 
 Trabajo tanto en front-end como en back-end, cuidando la calidad del código y la experiencia del usuario. 
@@ -96,7 +97,38 @@ export const PROYECTOS = [
   categoria: "Fullstack",
   url: "https://github.com/NicolasLaime/kutral-ecommerce"
   },
-    {
+  {
+  titulo: "Inmobiliaria - Full Stack",
+  imagen: inmobiliaria,
+  descripcion: 
+    `Desarrollé una aplicación inmobiliaria full stack compuesta por un backend en Spring Boot y un frontend en React. 
+    El backend implementa una API RESTful con Spring Security y JWT para proteger las rutas de administración, 
+    además de integrar Cloudinary para la gestión de imágenes y JPA para el acceso a la base de datos MySQL. 
+    Incluye un CRUD completo de propiedades y un sistema de mensajes donde los usuarios pueden contactar por una propiedad, 
+    y los mensajes son almacenados y gestionados desde el panel de administración.  
+    En el frontend utilicé React, Zustand para el manejo de estado global, Axios para las peticiones HTTP, 
+    React Router DOM para la navegación protegida y Tailwind CSS para un diseño moderno, limpio y responsive. 
+    El resultado es un SPA (Single Page Application) con un panel de administración seguro y una interfaz intuitiva para los visitantes.`,
+  Tecnologias: [
+    "Java",
+    "Spring Boot",
+    "Spring Security",
+    "JWT",
+    "JPA",
+    "MySQL",
+    "Cloudinary",
+    "React",
+    "Zustand",
+    "Axios",
+    "React Router DOM",
+    "TailwindCSS",
+    "REST API"
+  ],
+  categoria: "Fullstack",
+  url: "https://github.com/NicolasLaime/Spa-Inmobiliaria"
+},
+
+  {
   titulo: "Foro Patagonia - App Full Stack",
   imagen: foro, 
   descripcion:
